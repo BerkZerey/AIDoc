@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextActivity"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"></Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"></Space>
+
+        <Button
+            android:id="@+id/bt_geri"
+            android:layout_width="73dp"
+            android:layout_height="36dp"
+            android:background="@color/aidoc_turquoise"
+            android:onClick="OnButtonClicked"
+            android:text="Geri Dön"
+            android:textSize="11dp"
+            android:textColor="@color/aidoc_white"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"></Space>
+
+    <TextView
+        android:id="@+id/tx_baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HASTALIK"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/aidoc_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"></Space>
+
+    <TextView
+        android:id="@+id/tx_hastalik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burada hastalık yazacak."
+        android:textStyle="italic"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></Space>
+
+    <TextView
+        android:id="@+id/tx_altbaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEDAVİ"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/aidoc_turquoise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"></Space>
+
+    <TextView
+        android:id="@+id/tx_tedavi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burada tedavi yazacak."
+        android:textStyle="italic"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+</LinearLayout>

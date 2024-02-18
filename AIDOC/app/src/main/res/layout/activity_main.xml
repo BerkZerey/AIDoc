@@ -1,0 +1,1272 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scv_scroll">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:id="@+id/sv_semptomara"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:foregroundTint="@color/purple_700"
+                android:queryHint="Semptom giriniz..."
+                />
+
+            <Space android:layout_width="315dp"
+                android:layout_height="match_parent"></Space>
+
+            <Button
+                android:id="@+id/bt_asagikaydir"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/aidoc_turquoise"
+                android:text="▼"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/aidoc_white"
+
+                ></Button>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <CheckBox
+            android:id="@+id/cb_itching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kaşıntı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_skin_rash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Cilt Döküntüsü"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_nodal_skin_eruptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Nodal Cilt Döküntüleri"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_continuous_sneezing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sürekli Aksırma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_shivering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Titreme"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_chills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Üşüme"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_joint_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Eklem Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_stomach_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Mide Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_acidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Asidite"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_ulcers_on_tongue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Dilde Ülser"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_muscle_wasting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kas Kaybı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_vomiting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kusma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_burning_micturition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Yanma Mikturisyon"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_spotting_urination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Spotlandırıcı İdrar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_fatigue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Yorgunluk"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_weight_gain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kilo Alma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_anxiety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Anksiyete"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_cold_hands_and_feets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Soğuk Eller ve Ayaklar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_mood_swings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Mood Svingleri"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_weight_loss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kilo Kaybı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_restlessness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Huzursuzluk"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_lethargy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Letarji"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_patches_in_throat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Boğazda Yama"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_irregular_sugar_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Düzensiz Şeker Seviyesi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_cough"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Öksürük"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_high_fever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Yüksek Ateş"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_sunken_eyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gömülü Gözler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_breathlessness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Nefes Darlığı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_sweating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Terleme"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_dehydration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Dehidrasyon"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_indigestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Hazımsızlık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_headache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Baş Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_yellowish_skin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sarımsı Cilt"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_dark_urine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Koyu İdrar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_nausea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Mide Bulantısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_loss_of_appetite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="İştah Kaybı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_pain_behind_the_eyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gözlerin Arkasında Ağrı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_back_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Bel Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_constipation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kabızlık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_abdominal_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Karın Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_diarrhoea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="İshal"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_mild_fever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Hafif Ateş"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_yellow_urine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sarı İdrar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_yellowing_of_eyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gözlerin Sararması"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_acute_liver_failure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Akut Karaciğer Yetmezliği"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_overload2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sıvı Yüklemesi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_swelling_of_stomach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Midenin Şişmesi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_swelled_lymph_nodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Şişmiş Lenf Düğümleri"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_malaise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Keyifsizlik"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_blurred_and_distorted_vision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Bulanık ve Bozulmuş Görüş"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_phlegm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Balgam"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_throat_irritation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Boğaz Tahrişi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_redness_of_eyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gözlerin Kızarması"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_sinus_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sinüs Basıncı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_runny_nose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Akıntılı Burun"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_congestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Tıkanıklık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_chest_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Göğüs Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_weakness_in_limbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kol ve Bacaklarda Zayıflık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_fast_heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Hızlı Kalp Atışı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_pain_during_bowel_movements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Dışkılama Sırasında Ağrı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_pain_in_anal_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Anal Bölgede Ağrı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_bloody_stool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kanlı Dışkı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_irritation_in_anus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Analda Tahriş"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_neck_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Boyun Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_dizziness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Vertigo"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_cramps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kramp"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_bruising"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Morarma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_obesity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Obezite"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_swollen_legs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Şişmiş Bacaklar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_swollen_blood_vessels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Şişmış Kan Damarları"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_puffy_face_and_eyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Şişkin Yüz ve Gözler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_enlarged_thyroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Genişlemiş Tiroid"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_brittle_nails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kırılgan Tırnaklar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_swollen_extremeties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Şişmiş Ekstremeler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_excessive_hunger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Aşırı Açlık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_extra_marital_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Ekstra Marital Rehber"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_drying_and_tingling_lips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kuru ve Uyuşuk Dudaklar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_slurred_speech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Peltek Konuşma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_knee_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Diz Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_hip_joint_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kalça Eklem Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_muscle_weakness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kas Zayıflığı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_stiff_neck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sert Boyun"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_swelling_joints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Şişmiş Eklemeler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_movement_stiffness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Hareket Sertliği"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_spinning_movements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Dönen Hareketler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_loss_of_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Denge Kaybı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_unsteadiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="İstikrarsızlık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_weakness_of_one_body_side"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Vücudun Bir Tarafında Zayıflık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_loss_of_smell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Koku Almada Kayıp"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_bladder_discomfort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Mesane Rahatsızlığı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_foul_smell_of_urine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="İdrarın Kötü Kokusu"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_continuous_feel_of_urine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="S sürekli İdrar Hissi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_passage_of_gases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gaz Geçişi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_internal_itching"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="İç Kaşıntı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_toxic_look_typhos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Toksik Bakış (Tipho)"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_depression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Depresyon"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_irritability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Tahriş Olma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_muscle_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kas Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_altered_sensorium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Altered Sensorium"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_red_spots_over_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Vücutta Kırmızı Lekeler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_belly_pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Karın Ağrısı"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_abnormal_menstruation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Anormal Menstruasyon"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_dischromic_patches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Dischromik Patçalar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_watering_from_eyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gözlerden Su Gelme"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_increased_appetite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Artan İştah"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_polyuria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Poluria"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_family_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Aile Geçmişi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_mucoid_sputum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Mükoid Sputum"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_rusty_sputum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Paslı Sputum"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_lack_of_concentration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Konsantrasyon Eksikliği"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_visual_disturbances"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Görme Bozuklukları"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_receiving_blood_transfusion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kan Transfüzyon Alma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_receiving_unsterile_injections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Steril Olmayan İnjections"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_coma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Koma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_stomach_bleeding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Mide Kanaması"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_distention_of_abdomen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Karında Şişkinlik"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_history_of_alcohol_consumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Alkol Tüketme Geçmişi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_overload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sıvı Yüklemesi"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_blood_in_sputum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sputumdaki Kan"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_prominent_veins_on_calf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Baldırda Belirgin Vb"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_palpitations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kalpitasyonlar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_painful_walking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Ağrılı Yürüme"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_pus_filled_pimples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Pus Doldurulmuş Sivilceler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_blackheads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Siyah Noktalar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_scurring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Scurring"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_skin_peeling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Skin Peeling"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_silver_like_dusting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Gümüş Gibi Tozlaşma"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_small_dents_in_nails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Tırnakta Küçük Çöküntüler"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_inflammatory_nails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Enflamatuvar Tırnaklar"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_blister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Kabarcık"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_red_sore_around_nose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Burun Etrafında Kırmızı Yara"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+        <CheckBox
+            android:id="@+id/cb_yellow_crust_ooze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Sarı Kabuk Özu"
+            android:textSize="16dp"
+            android:buttonTint="@color/aidoc_turquoise"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="21dp"
+                android:background="@color/aidoc_turquoise"
+                android:text="TARA"
+                android:textColor="@color/aidoc_white"
+                android:onClick="OnButtonClicked"/>
+
+            <TextView
+                android:id="@+id/semptom_sayaci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="21dp"
+                android:text="0/17"
+                android:textStyle="bold"
+                android:textColor="@color/aidoc_turquoise"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
